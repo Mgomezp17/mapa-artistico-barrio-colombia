@@ -1,35 +1,19 @@
 import L from 'leaflet';
 
 /**
- * Crea iconos para POIs. Si existe `image`, se usa foto "a secas";
- * si no, cae a un icono numérico simple de respaldo.
+ * Crea un L.divIcon en forma de banderín negro con número blanco,
+ * para mantener consistencia visual con el directorio lateral.
  */
-export function makePoiIcon(number, category = 'default', image = '', zoom = 16) {
+export function makePoiIcon(number, category = 'default') {
   const label = String(number ?? '').padStart(2, '0');
-  const hasImage = Boolean(image && String(image).trim());
-
-  if (hasImage) {
-    const size = sizeForZoom(zoom);
-    return L.icon({
-      iconUrl: image,
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
-      popupAnchor: [0, -size / 2],
-      className: `poi-photo-marker poi-photo-marker--${category}`,
-    });
-  }
-
   return L.divIcon({
-    className: `poi-fallback poi-fallback--${category}`,
-    html: `<span class="poi-fallback__num">${label}</span>`,
-    iconSize: [24, 24],
-    iconAnchor: [12, 12],
-    popupAnchor: [0, -12],
+    className: `poi poi--${category}`,
+    html: `
+      <span class="poi__stem" aria-hidden="true"></span>
+      <span class="poi__tag">${label}</span>
+    `,
+    iconSize: [34, 46],
+    iconAnchor: [4, 44],
+    popupAnchor: [12, -36],
   });
-}
-
-function sizeForZoom(zoom = 16) {
-  // Escala suave: ~34px en zoom 14, ~72px en zoom 19
-  const raw = 34 + (zoom - 14) * 7.5;
-  return Math.max(26, Math.min(72, Math.round(raw)));
 }
