@@ -62,7 +62,6 @@ export function renderPois(map, pois = [], categories = [], options = {}) {
   );
   const group = L.layerGroup();
   const byId = new Map();
-  const markerEntries = [];
   let pendingOpenHandler = null;
 
   pois.forEach((poi, i) => {
@@ -70,7 +69,7 @@ export function renderPois(map, pois = [], categories = [], options = {}) {
     const n = i + 1;
 
     const marker = L.marker(poi.coords, {
-      icon: makePoiIcon(n, poi.category, poi.image, map.getZoom()),
+      icon: makePoiIcon(n, poi.category),
       keyboard: true,
       riseOnHover: true,
       title: poi.name,
@@ -93,19 +92,10 @@ export function renderPois(map, pois = [], categories = [], options = {}) {
 
     marker.addTo(group);
     const entry = { marker, poi, number: n };
-    markerEntries.push(entry);
     byId.set(poi.id, entry);
   });
 
   group.addTo(map);
-
-  const refreshIconsForZoom = () => {
-    const zoom = map.getZoom();
-    markerEntries.forEach(({ marker, poi, number }) => {
-      marker.setIcon(makePoiIcon(number, poi.category, poi.image, zoom));
-    });
-  };
-  map.on('zoomend', refreshIconsForZoom);
 
   function focus(id) {
     const entry = byId.get(id);
