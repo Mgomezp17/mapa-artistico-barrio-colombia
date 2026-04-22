@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#f4eedb" />
+    <title>Barrio Colombia — Mapa artístico</title>
+    <meta
+      name="description"
+      content="Mapa ilustrado e interactivo del Barrio Colombia. Paseá, hacé zoom y descubrí sus rincones."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="app-header" aria-label="Encabezado">
+        <div class="app-header__band pattern-checker" aria-hidden="true"></div>
+        <h1 class="app-header__title">
+          <span class="app-header__eyebrow">Mapa ilustrado</span>
+          <span class="app-header__word">Barrio</span>
+          <span class="app-header__word app-header__word--accent"
+            >Colombia</span
+          >
+        </h1>
+        <div
+          class="app-header__band pattern-stripes-v"
+          aria-hidden="true"
+        ></div>
+      </header>
+
+      <main class="app-main">
+        <div
+          id="map"
+          class="map"
+          role="application"
+          aria-label="Mapa interactivo"
+        ></div>
+
+        <aside class="directory" aria-label="Directorio de talleres y galerías">
+          <h2 class="directory__title">
+            <span class="directory__title-main">Barrio Colombia</span>
+            <span class="directory__title-sub">Distrito de Artistas</span>
+          </h2>
+          <ol class="directory__list" id="directory-list"></ol>
+        </aside>
+      </main>
+
+      <!-- <footer class="app-footer">
+        <div class="app-footer__band pattern-stripes-h" aria-hidden="true"></div>
+        <p class="app-footer__credits">
+          Hecho con <span aria-hidden="true">♥</span> — Pulsá un banderín del
+          directorio o del mapa para conocer cada lugar.
+        </p>
+      </footer> -->
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

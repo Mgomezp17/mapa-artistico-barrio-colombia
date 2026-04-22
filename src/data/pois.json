@@ -1,0 +1,110 @@
+[
+  {
+    "id": "la-hoja-taller",
+    "name": "La hoja taller",
+    "category": "arte",
+    "coords": [6.22687, -75.57264],
+    "placeholderCoords": true,
+    "image": "/assets/pois/la-hoja.png",
+    "description": "Taller multidisciplinar con foco en obra sobre papel y grabado."
+  },
+  {
+    "id": "taller-alejandro-gutierrez",
+    "name": "Taller Alejandro Gutierrez",
+    "category": "arte",
+    "coords": [6.22712, -75.57293],
+    "placeholderCoords": true,
+    "image": "/assets/pois/alejandro guty.png",
+    "description": "Espacio de pintura contemporánea y experimentación matérica."
+  },
+  {
+    "id": "taller-ana-bel-zabala",
+    "name": "Taller Ana Bel Zabala, Nadir Figueroa y Lina Velásquez",
+    "category": "arte",
+    "coords": [6.22743, -75.57347],
+    "placeholderCoords": true,
+    "image": "/assets/pois/taller ana bel.png",
+    "description": "Taller compartido por tres artistas con muestras rotativas abiertas al público."
+  },
+  {
+    "id": "la-factoria",
+    "name": "La Factoría",
+    "category": "cultura",
+    "coords": [6.22765, -75.57358],
+    "placeholderCoords": true,
+    "image": "/assets/pois/la factoria.png",
+    "description": "Centro cultural que articula residencias, charlas y proyectos editoriales."
+  },
+  {
+    "id": "atelier-4",
+    "name": "Atelier.4",
+    "category": "arte",
+    "coords": [6.22745, -75.57372],
+    "placeholderCoords": true,
+    "image": "/assets/pois/atelier.png",
+    "description": "Colectivo de cuatro artistas con exhibición permanente en su taller."
+  },
+  {
+    "id": "el-coleccionista",
+    "name": "El Coleccionista Galería",
+    "category": "cultura",
+    "coords": [6.22718, -75.57387],
+    "placeholderCoords": true,
+    "image": "/assets/pois/el coleccionista.png",
+    "description": "Galería especializada en obra gráfica y objetos de coleccionismo."
+  },
+  {
+    "id": "bunker-galeria",
+    "name": "Bunker Galería",
+    "category": "cultura",
+    "coords": [6.22638, -75.57452],
+    "placeholderCoords": true,
+    "image": "/assets/pois/bunker.jpeg",
+    "description": "Programa expositivo enfocado en arte emergente colombiano."
+  },
+  {
+    "id": "estudio-alejandro-tobon",
+    "name": "Estudio Alejandro Tobón",
+    "category": "arte",
+    "coords": [6.22596, -75.57435],
+    "placeholderCoords": true,
+    "image": "/assets/pois/alejandro tobon.png",
+    "description": "Estudio de pintura con visitas guiadas previa cita."
+  },
+  {
+    "id": "estudio-jeison-sierra",
+    "name": "Estudio Jeison Sierra",
+    "category": "arte",
+    "coords": [6.22607, -75.57425],
+    "placeholderCoords": true,
+    "image": "/assets/pois/jeison sierra.png",
+    "description": "Arte conceptual y proyectos site-specific en espacio íntimo."
+  },
+  {
+    "id": "estudio-danilo-cuadros",
+    "name": "Estudio Danilo Cuadros",
+    "category": "arte",
+    "coords": [6.2259, -75.57426],
+    "placeholderCoords": true,
+    "image": "/assets/pois/danilo cuadros.png",
+    "description": "Producción pictórica de gran formato y escultura mixta."
+  },
+  {
+    "id": "taller-estrato-3",
+    "name": "Taller Estrato 3",
+    "category": "arte",
+    "coords": [6.22597, -75.57413],
+    "placeholderCoords": true,
+    "image": "/assets/pois/estrato3.png",
+    "description": "Colectivo autogestionado con talleres abiertos de serigrafía."
+  },
+  {
+    "id": "lab-1401",
+    "name": "Lab1401",
+    "category": "cultura",
+    "coords": [6.22578, -75.57406],
+    "placeholderCoords": true,
+    "image": "/assets/pois/lab-1401.png",
+    "description": "Laboratorio de arte y tecnología con residencias y activaciones públicas."
+  }
+]

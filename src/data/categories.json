@@ -1,0 +1,8 @@
+[
+  { "id": "gastro",   "label": "Gastronomía",  "description": "Comer, picar, brindar." },
+  { "id": "cultura",  "label": "Cultura",      "description": "Museos, teatros, espacios." },
+  { "id": "arte",     "label": "Arte urbano",  "description": "Murales, galerías, talleres." },
+  { "id": "historia", "label": "Historia",     "description": "Edificios y hechos patrimoniales." },
+  { "id": "verde",    "label": "Espacio verde","description": "Parques y plazas." },
+  { "id": "nocturno", "label": "Vida nocturna","description": "Bares y música en vivo." }
+]

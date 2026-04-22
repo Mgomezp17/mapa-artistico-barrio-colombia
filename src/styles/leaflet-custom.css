@@ -1,0 +1,264 @@
+/* Overrides de Leaflet para integrarlo al sistema Barrio Colombia */
+
+.leaflet-container {
+  background: var(--map-bg);
+  font-family: var(--font-body);
+  outline: 0;
+}
+
+/* Atribuci\u00f3n mapeada al sistema visual */
+.leaflet-control-attribution {
+  font-family: var(--font-body) !important;
+  font-size: 10px !important;
+  background: rgba(244, 238, 219, 0.85) !important;
+  color: var(--bc-black) !important;
+  padding: 2px 8px !important;
+  border-top-left-radius: 6px !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--bc-blue-900) !important;
+  text-decoration: none;
+}
+
+.leaflet-control-attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Contorno del barrio: darle un toque de branding */
+.barrio-outline path,
+.barrio-accent path {
+  pointer-events: none;
+}
+
+.barrio-mask {
+  pointer-events: none;
+}
+
+/* ---------- POI markers (foto) ---------- */
+.poi-photo-marker {
+  border: 2px solid var(--bc-black);
+  border-radius: 10px;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.75);
+  object-fit: cover;
+  background: var(--bc-cream);
+}
+
+.poi-fallback {
+  display: grid !important;
+  place-items: center;
+  border-radius: 999px;
+  border: 2px solid var(--bc-black);
+  background: var(--bc-black);
+  color: var(--bc-cream);
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.65);
+}
+
+.poi-fallback__num {
+  font-family: var(--font-display);
+  font-size: 10px;
+  line-height: 1;
+}
+
+/* ---------- Popups ---------- */
+.leaflet-popup-content-wrapper {
+  padding: 0;
+  background: var(--surface-popup);
+  border: var(--stroke-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--hard-shadow);
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: auto !important;
+  min-width: 220px;
+  font-family: var(--font-body);
+  color: var(--ink-strong);
+  line-height: 1.4;
+}
+
+.leaflet-popup-tip-container {
+  overflow: visible;
+}
+
+.leaflet-popup-tip {
+  background: var(--bc-black);
+  box-shadow: none;
+}
+
+.leaflet-popup-close-button {
+  top: 6px !important;
+  right: 8px !important;
+  width: 28px !important;
+  height: 28px !important;
+  display: grid !important;
+  place-items: center !important;
+  border-radius: var(--radius-pill) !important;
+  background: var(--bc-cream) !important;
+  border: var(--stroke-medium) !important;
+  color: var(--bc-black) !important;
+  font-size: 18px !important;
+  line-height: 1 !important;
+  z-index: 2;
+}
+
+.leaflet-popup-close-button:hover {
+  background: var(--bc-yellow) !important;
+}
+
+/* Estructura interna del popup */
+.popup__header {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 40px 12px 14px;
+  background: var(--accent-primary);
+  color: var(--bc-cream);
+  border-bottom: var(--stroke-strong);
+}
+
+.popup--gastro .popup__header { background: var(--poi-gastro); color: var(--bc-black); }
+.popup--cultura .popup__header { background: var(--poi-cultura); }
+.popup--arte .popup__header { background: var(--poi-arte); }
+.popup--historia .popup__header { background: var(--poi-historia); }
+.popup--verde .popup__header { background: var(--poi-verde); color: var(--bc-black); }
+.popup--nocturno .popup__header { background: var(--poi-nocturno); color: var(--bc-black); }
+
+.popup__badge {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  background: var(--bc-black);
+  color: var(--bc-cream);
+  font-family: var(--font-display);
+  font-size: 12px;
+  line-height: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 70% 100%, 0 100%);
+  margin-top: 2px;
+}
+
+.popup__heading {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.popup__eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--fs-100);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.popup__title {
+  margin: 4px 0 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-400);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+
+.popup__img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: var(--stroke-strong);
+  background: var(--bc-lavender);
+}
+
+.popup__desc {
+  margin: 0;
+  padding: 12px 14px 14px;
+  font-size: var(--fs-200);
+}
+
+.popup__actions {
+  margin: 0;
+  padding: 0 14px 14px;
+}
+
+.popup__maps-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: var(--stroke-medium);
+  border-radius: var(--radius-pill);
+  background: var(--bc-cream);
+  box-shadow: var(--hard-shadow-sm);
+  color: var(--bc-black);
+  font-family: var(--font-body);
+  font-size: var(--fs-100);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.popup__maps-btn:hover {
+  background: var(--bc-yellow);
+}
+
+/* ---------- Controles de zoom ---------- */
+.leaflet-bar {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 32px !important;
+  font-family: var(--font-display) !important;
+  color: var(--bc-black) !important;
+  background: var(--bc-cream) !important;
+  border: var(--stroke-medium) !important;
+  box-shadow: var(--hard-shadow-sm) !important;
+  border-radius: var(--radius-sm) !important;
+  margin-bottom: 6px !important;
+}
+
+.leaflet-bar a:hover {
+  background: var(--bc-yellow) !important;
+  transform: translate(-1px, -1px);
+}
+
+.leaflet-bar a:focus-visible {
+  outline: 3px solid var(--focus-ring) !important;
+  outline-offset: 2px !important;
+}
+
+.leaflet-bar a.leaflet-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Mobile: popup casi full-width */
+@media (max-width: 520px) {
+  .leaflet-popup-content {
+    min-width: 0;
+    width: min(86vw, 320px) !important;
+  }
+
+  .popup__img {
+    height: 140px;
+  }
+}
+
+/* Motion reducido */
+@media (prefers-reduced-motion: reduce) {
+  .poi-photo-marker,
+  .leaflet-bar a:hover {
+    transition: none;
+    transform: none;
+  }
+}

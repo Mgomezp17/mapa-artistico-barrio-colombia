@@ -1,0 +1,71 @@
+:root {
+  /* Paleta Barrio Colombia */
+  --bc-green-900: #0b4d3f;
+  --bc-green-300: #8ee3a6;
+  --bc-magenta: #e832d3;
+  --bc-lavender: #c5b8f5;
+  --bc-orange: #ff5a15;
+  --bc-yellow: #ffcb00;
+  --bc-red: #e8172c;
+  --bc-blue-900: #0032d6;
+  --bc-blue-500: #2a80ff;
+  --bc-cream: #f4eedb;
+  --bc-black: #0a0a0a;
+  --bc-brown: #6b4a28;
+
+  /* Mapa: fondo neutro mientras cargan los tiles Positron */
+  --map-bg: #e9e5d8;
+
+  /* Rol semantico */
+  --surface-app: var(--bc-cream);
+  --surface-popup: var(--bc-cream);
+  --ink-strong: var(--bc-black);
+  --ink-soft: #2a2a2a;
+  --accent-primary: var(--bc-green-900);
+  --accent-secondary: var(--bc-magenta);
+  --focus-ring: var(--bc-blue-500);
+
+  /* POIs por categoria */
+  --poi-gastro: var(--bc-orange);
+  --poi-cultura: var(--bc-magenta);
+  --poi-arte: var(--bc-blue-900);
+  --poi-historia: var(--bc-green-900);
+  --poi-verde: var(--bc-green-300);
+  --poi-nocturno: var(--bc-yellow);
+
+  /* Tipografia */
+  --font-display: 'Archivo Black', 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  /* Escala tipografica (fluid) */
+  --fs-100: clamp(0.75rem, 0.72rem + 0.15vw, 0.8rem);
+  --fs-200: clamp(0.875rem, 0.84rem + 0.2vw, 0.95rem);
+  --fs-300: clamp(1rem, 0.94rem + 0.3vw, 1.1rem);
+  --fs-400: clamp(1.15rem, 1rem + 0.6vw, 1.4rem);
+  --fs-500: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem);
+  --fs-700: clamp(2.25rem, 1.6rem + 3.2vw, 4rem);
+
+  /* Forma */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* Borde duro caracteristico del branding */
+  --stroke-strong: 3px solid var(--bc-black);
+  --stroke-medium: 2px solid var(--bc-black);
+
+  /* Sombras planas "duotone" */
+  --hard-shadow: 4px 4px 0 0 var(--bc-black);
+  --hard-shadow-sm: 2px 2px 0 0 var(--bc-black);
+
+  /* Layout */
+  --header-h: clamp(72px, 9vh, 120px);
+  --footer-h: clamp(64px, 7vh, 96px);
+  --content-max: 1600px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+}
