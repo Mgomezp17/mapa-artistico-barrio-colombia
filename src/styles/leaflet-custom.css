@@ -35,6 +35,24 @@
   pointer-events: none;
 }
 
+/* ---------- Building overlay (ensayo casas azules) ---------- */
+.building-footprint {
+  pointer-events: none;
+}
+
+.building-footprint path {
+  transition:
+    fill-opacity var(--dur-base) var(--ease-out),
+    stroke-width var(--dur-base) var(--ease-out),
+    filter var(--dur-base) var(--ease-out);
+}
+
+.building-footprint.is-active {
+  fill-opacity: 0.78 !important;
+  stroke-width: 2.2 !important;
+  filter: drop-shadow(0 0 4px rgba(42, 255, 49, 0.55));
+}
+
 /* ---------- POI markers (banderín negro numerado) ---------- */
 .poi {
   position: relative;
@@ -149,12 +167,27 @@
   border-bottom: var(--stroke-strong);
 }
 
-.popup--gastro .popup__header { background: var(--poi-gastro); color: var(--bc-black); }
-.popup--cultura .popup__header { background: var(--poi-cultura); }
-.popup--arte .popup__header { background: var(--poi-arte); }
-.popup--historia .popup__header { background: var(--poi-historia); }
-.popup--verde .popup__header { background: var(--poi-verde); color: var(--bc-black); }
-.popup--nocturno .popup__header { background: var(--poi-nocturno); color: var(--bc-black); }
+.popup--gastro .popup__header {
+  background: var(--poi-gastro);
+  color: var(--bc-black);
+}
+.popup--cultura .popup__header {
+  background: var(--poi-cultura);
+}
+.popup--arte .popup__header {
+  background: var(--poi-arte);
+}
+.popup--historia .popup__header {
+  background: var(--poi-historia);
+}
+.popup--verde .popup__header {
+  background: var(--poi-verde);
+  color: var(--bc-black);
+}
+.popup--nocturno .popup__header {
+  background: var(--poi-nocturno);
+  color: var(--bc-black);
+}
 
 .popup__badge {
   flex: 0 0 auto;

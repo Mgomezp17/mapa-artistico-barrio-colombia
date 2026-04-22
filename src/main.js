@@ -6,6 +6,7 @@ import './styles/leaflet-custom.css';
 
 import { createMap } from './map/createMap.js';
 import { addBarrioHighlight } from './map/highlightLayer.js';
+import { addBuildingOverlay } from './map/buildingOverlayLayer.js';
 import { renderPois } from './pois/renderPois.js';
 import { renderDirectory } from './ui/directory.js';
 import { keepBarrioFitted } from './utils/responsive.js';
@@ -37,26 +38,39 @@ async function boot() {
 
   const directoryEl = document.getElementById('directory-list');
   const directoryPanelEl = directoryEl?.closest('.directory') ?? null;
+  const buildingOverlay = addBuildingOverlay(map, pois);
   let directoryApi = null;
 
-  const setDirectoryCollapsed = (collapsed) => {
+  const setDirectoryCollapsed = collapsed => {
     if (!directoryPanelEl) return;
-    directoryPanelEl.classList.toggle('directory--collapsed-mobile', Boolean(collapsed));
+    directoryPanelEl.classList.toggle(
+      'directory--collapsed-mobile',
+      Boolean(collapsed),
+    );
   };
 
   const { focus } = renderPois(map, pois, categories, {
-    onSelect: (poi) => {
+    onSelect: poi => {
       directoryApi?.setActive(poi?.id ?? null);
+      buildingOverlay.setActive(poi?.id ?? null);
       setDirectoryCollapsed(Boolean(poi));
     },
   });
 
   directoryApi = renderDirectory(directoryEl, pois, {
-    onSelect: (poi) => focus(poi.id),
+    onSelect: poi => focus(poi.id),
   });
 
-  map.fitBounds(barrioBounds, { padding: [140, 140], animate: false });
-  keepBarrioFitted(map, barrioBounds, { padding: [140, 140] });
+  /** @type {[number, number]} */
+  const initialPadding = window.matchMedia('(max-width: 720px)').matches
+    ? [28, 28]
+    : [56, 56];
+  map.fitBounds(barrioBounds, {
+    padding: initialPadding,
+    maxZoom: 17.8,
+    animate: false,
+  });
+  keepBarrioFitted(map, barrioBounds, { padding: initialPadding });
 
   if (import.meta.env.DEV) {
     const { enableCoordPicker } = await import('./dev/coord-picker.js');
@@ -64,6 +78,6 @@ async function boot() {
   }
 }
 
-boot().catch((err) => {
+boot().catch(err => {
   console.error('[artistic-map] Error al inicializar', err);
 });
