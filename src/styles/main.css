@@ -62,29 +62,34 @@ body {
   padding: 0.6rem 1rem;
   font-family: var(--font-display);
   line-height: 0.92;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--ink-strong);
   min-width: 0;
 }
 
-.app-header__eyebrow {
-  font-family: var(--font-body);
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  font-size: var(--fs-100);
-  color: var(--bc-brown);
-  margin-bottom: 0.25rem;
-}
-
-.app-header__word {
+.app-header__headline {
   display: block;
-  font-size: clamp(1.75rem, 1.2rem + 3.4vw, 3rem);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--ink-strong);
   max-width: 100%;
 }
 
-.app-header__word--accent {
-  color: var(--accent-primary);
+.app-header__headline--top {
+  font-size: clamp(1.2rem, 0.95rem + 1.8vw, 2.1rem);
+  line-height: 0.95;
+}
+
+.app-header__headline--main {
+  font-size: clamp(2.1rem, 1.25rem + 4.8vw, 4rem);
+  line-height: 0.9;
+}
+
+.app-header__headline--sub {
+  font-size: clamp(1.05rem, 0.85rem + 1.3vw, 1.9rem);
+  line-height: 0.95;
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
 /* ---------- Main (mapa + leyenda) ---------- */

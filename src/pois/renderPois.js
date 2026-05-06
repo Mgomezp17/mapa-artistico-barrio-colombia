@@ -16,9 +16,10 @@ function buildPopupHtml(poi, number, categoryLabel) {
   const cat = escapeHtml(categoryLabel ?? poi.category ?? '');
   const num = String(number).padStart(2, '0');
   const [lat, lng] = Array.isArray(poi.coords) ? poi.coords : [];
-  const mapsUrl = Number.isFinite(lat) && Number.isFinite(lng)
-    ? `https://www.google.com/maps?q=${lat},${lng}`
-    : null;
+  const mapsUrl =
+    Number.isFinite(lat) && Number.isFinite(lng)
+      ? `https://www.google.com/maps?q=${lat},${lng}`
+      : null;
   const img = poi.image
     ? `<img class="popup__img" src="${escapeHtml(poi.image)}" loading="lazy" decoding="async" alt="${name}" />`
     : '';
@@ -77,8 +78,8 @@ export function renderPois(map, pois = [], categories = [], options = {}) {
     });
 
     marker.bindPopup(buildPopupHtml(poi, n, categoryLabel[poi.category]), {
-      maxWidth: 320,
-      minWidth: 240,
+      maxWidth: 440,
+      minWidth: 320,
       className: `popup-wrap popup-wrap--${poi.category}`,
       autoPanPadding: [24, 24],
       autoPan: false,

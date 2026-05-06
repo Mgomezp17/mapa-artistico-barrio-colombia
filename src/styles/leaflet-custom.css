@@ -126,6 +126,13 @@
   line-height: 1.4;
 }
 
+/* Desktop/tablet: fuerza un popup más ancho (tipo "card") */
+@media (min-width: 521px) {
+  .leaflet-popup-content {
+    width: 380px !important;
+  }
+}
+
 .leaflet-popup-tip-container {
   overflow: visible;
 }
@@ -308,7 +315,7 @@
 @media (max-width: 520px) {
   .leaflet-popup-content {
     min-width: 0;
-    width: min(86vw, 320px) !important;
+    width: min(92vw, 380px) !important;
   }
 
   .popup__img {
