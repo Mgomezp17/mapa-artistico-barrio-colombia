@@ -6,7 +6,7 @@
     "coords": [6.22687, -75.57264],
     "placeholderCoords": true,
     "image": "/assets/pois/la-hoja.png",
-    "description": "Taller multidisciplinar con foco en obra sobre papel y grabado."
+    "description": "Más que una galería, es un espacio vivo: puedes encontrarte con artistas trabajando, manchas de tinta recientes y pruebas que tal vez nunca se exhiban, pero que hacen parte del proceso real del arte. Es ideal para quienes quieren ver el “detrás” de una obra y entender cómo nace una idea. ✨ Si te gusta lo íntimo, lo manual y lo auténtico, este lugar te engancha."
   },
   {
     "id": "taller-alejandro-gutierrez",
@@ -15,7 +15,7 @@
     "coords": [6.22712, -75.57293],
     "placeholderCoords": true,
     "image": "/assets/pois/alejandro guty.png",
-    "description": "Espacio de pintura contemporánea y experimentación matérica."
+    "description": "Su trabajo suele moverse entre lo escultórico y lo conceptual, así que aquí puedes encontrarte con piezas en proceso, estructuras incompletas y pruebas que revelan cómo piensa un artista. Es una experiencia mucho más cruda y real que una exposición tradicional. 🔥 Es como meterse en la mente de un artista mientras está creando."
   },
   {
     "id": "taller-ana-bel-zabala",
@@ -24,7 +24,7 @@
     "coords": [6.22743, -75.57347],
     "placeholderCoords": true,
     "image": "/assets/pois/taller ana bel.png",
-    "description": "Taller compartido por tres artistas con muestras rotativas abiertas al público."
+    "description": "Tres artistas, un solo espacio… y tres formas completamente distintas de ver el mundo. Este taller compartido es un punto de encuentro de estilos, emociones y discursos. Aquí conviven obras que pueden ir desde lo íntimo y emocional hasta lo experimental y conceptual. 🎨 Perfecto para sentir la diversidad del arte contemporáneo en un solo lugar."
   },
   {
     "id": "la-factoria",
@@ -33,7 +33,7 @@
     "coords": [6.22765, -75.57358],
     "placeholderCoords": true,
     "image": "/assets/pois/la factoria.png",
-    "description": "Centro cultural que articula residencias, charlas y proyectos editoriales."
+    "description": "Aquí pasan cosas todo el tiempo: exposiciones, ferias, eventos, música, diseño… siempre hay movimiento. No es solo para ver arte, es para vivirlo. Es el tipo de lugar donde puedes ir por curiosidad y terminar quedándote horas, conectando con gente, ideas y experiencias. ⚡ El corazón vibrante del Distrito de Artistas."
   },
   {
     "id": "atelier-4",
@@ -42,7 +42,7 @@
     "coords": [6.22745, -75.57372],
     "placeholderCoords": true,
     "image": "/assets/pois/atelier.png",
-    "description": "Colectivo de cuatro artistas con exhibición permanente en su taller."
+    "description": "Aquí se valora el trabajo manual, la técnica y el tiempo que toma crear. Es un lugar donde cada obra tiene historia, donde el error también hace parte del resultado y donde lo pequeño cobra importancia. 🌿 Ideal para quienes conectan con lo delicado, lo estético y lo bien hecho."
   },
   {
     "id": "el-coleccionista",
@@ -51,7 +51,7 @@
     "coords": [6.22718, -75.57387],
     "placeholderCoords": true,
     "image": "/assets/pois/el coleccionista.png",
-    "description": "Galería especializada en obra gráfica y objetos de coleccionismo."
+    "description": "Las exposiciones están cuidadosamente curadas, lo que significa que cada obra tiene un propósito dentro del espacio. Es más estructurado, más “formal”, pero igual de interesante. 💎 Es el lugar donde el arte se convierte en pieza de colección."
   },
   {
     "id": "bunker-galeria",
@@ -60,7 +60,7 @@
     "coords": [6.22638, -75.57452],
     "placeholderCoords": true,
     "image": "/assets/pois/bunker.jpeg",
-    "description": "Programa expositivo enfocado en arte emergente colombiano."
+    "description": "Puedes encontrarte con instalaciones, propuestas conceptuales o exposiciones que cuestionan lo que entendemos como arte. Es un lugar para salir de lo común y enfrentarse a ideas nuevas. 🖤 Para los que quieren sentir, cuestionar y ver algo diferente."
   },
   {
     "id": "estudio-alejandro-tobon",
@@ -69,7 +69,7 @@
     "coords": [6.22596, -75.57435],
     "placeholderCoords": true,
     "image": "/assets/pois/alejandro tobon.png",
-    "description": "Estudio de pintura con visitas guiadas previa cita."
+    "description": "Un espacio donde la obra está en constante transformación. El estudio de Alejandro Tobón es un lugar de creación activa, donde los procesos son tan importantes como los resultados. Aquí se siente el ritmo del trabajo artístico: materiales en uso, piezas en evolución y una búsqueda constante por explorar nuevas formas de expresión. 🎯 Ideal para entender cómo evoluciona una obra desde cero."
   },
   {
     "id": "estudio-jeison-sierra",
@@ -78,7 +78,7 @@
     "coords": [6.22607, -75.57425],
     "placeholderCoords": true,
     "image": "/assets/pois/jeison sierra.png",
-    "description": "Arte conceptual y proyectos site-specific en espacio íntimo."
+    "description": "Este estudio es un punto de exploración artística donde las ideas se construyen desde la experimentación. El trabajo de Jeison Sierra suele moverse entre diferentes técnicas y formatos, lo que hace que el espacio sea dinámico y cambiante. Cada visita puede ser distinta, porque el proceso nunca se detiene. 🔍 Un lugar para descubrir arte en movimiento."
   },
   {
     "id": "estudio-danilo-cuadros",
@@ -87,7 +87,7 @@
     "coords": [6.2259, -75.57426],
     "placeholderCoords": true,
     "image": "/assets/pois/danilo cuadros.png",
-    "description": "Producción pictórica de gran formato y escultura mixta."
+    "description": "Un taller donde el arte se construye desde la práctica constante. Aquí no hay obra estática: todo está en desarrollo, en prueba, en cambio. El estudio refleja disciplina, exploración y una relación directa con los materiales. Es un espacio honesto, donde se ve el esfuerzo detrás de cada pieza. 🛠️ El arte como proceso, no como resultado final."
   },
   {
     "id": "taller-estrato-3",
@@ -96,7 +96,7 @@
     "coords": [6.22597, -75.57413],
     "placeholderCoords": true,
     "image": "/assets/pois/estrato3.png",
-    "description": "Colectivo autogestionado con talleres abiertos de serigrafía."
+    "description": "Este espacio tiene un mensaje más allá de lo visual. El nombre ya dice mucho: “Estrato 3” hace referencia a la realidad social colombiana, y desde ahí se construyen reflexiones a través del arte. Aquí el arte se conecta con lo cotidiano, con lo político y con lo social. No es solo estética, es contenido. 💬 Un lugar donde el arte también cuestiona y genera conversación."
   },
   {
     "id": "lab-1401",
@@ -105,6 +105,6 @@
     "coords": [6.22578, -75.57406],
     "placeholderCoords": true,
     "image": "/assets/pois/lab-1401.png",
-    "description": "Laboratorio de arte y tecnología con residencias y activaciones públicas."
+    "description": "El futuro del arte también tiene su lugar aquí. Lab1401 es un laboratorio creativo donde se cruzan el arte, el diseño y la tecnología. Es un espacio para experimentar con nuevas ideas: desde lo digital hasta lo interactivo. Aquí el arte no se queda en lo tradicional, sino que explora lo que viene. 🚀 Para los que quieren ver hacia dónde va el arte contemporáneo."
   }
 ]

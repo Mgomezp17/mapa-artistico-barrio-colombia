@@ -34,8 +34,8 @@
   --poi-nocturno: var(--bc-yellow);
 
   /* Tipografia */
-  --font-display: 'Archivo Black', 'Space Grotesk', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-display: 'Montserrat', system-ui, sans-serif;
+  --font-body: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 
   /* Escala tipografica (fluid) */
   --fs-100: clamp(0.75rem, 0.72rem + 0.15vw, 0.8rem);

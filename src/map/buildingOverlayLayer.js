@@ -9,6 +9,10 @@ export function addBuildingOverlay(map, pois = []) {
   const layerGroup = L.layerGroup().addTo(map);
   const byPoiId = new Map();
 
+  // Ajuste global: orientación dominante de las calles en esta zona.
+  // Cambiá este valor si querés que toda la capa rote un poco.
+  const DEFAULT_FOOTPRINT_ANGLE_DEG = -35;
+
   pois.forEach((poi, index) => {
     if (!Array.isArray(poi.coords) || poi.coords.length !== 2 || !poi.id)
       return;
@@ -17,7 +21,10 @@ export function addBuildingOverlay(map, pois = []) {
     // Dimensiones aproximadas de una huella urbana pequeña.
     const halfWidthM = 7.5;
     const halfHeightM = 5.5;
-    const angleDeg = (index % 4) * 12 - 18; // leve variación para no verse idénticas
+    const angleDeg =
+      Number.isFinite(poi.footprintAngleDeg) && typeof poi.footprintAngleDeg === 'number'
+        ? poi.footprintAngleDeg
+        : DEFAULT_FOOTPRINT_ANGLE_DEG;
     const polygon = makeRotatedRect(
       lat,
       lng,
